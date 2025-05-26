@@ -6,6 +6,7 @@ from streamlit_cookies_controller import CookieController # Librería para manej
 # Creamos una instancia de CookieController
 controller = CookieController()
 secrets = "rolpagina"
+ocultarOpciones="True"
 
 def validarUsuario(usuario,clave):    
     """Permite la validación de usuario y clave
@@ -117,7 +118,7 @@ def generarMenuRoles(usuario):
         # Mostramos los enlaces de páginas        
         st.subheader("Opciones")
         # Verificamos si se deben ocultar o deshabilitar las opciones del menú
-        if st.secrets["ocultarOpciones"]=="True": # Verificamos el valor del secreto "ocultarOpciones"
+        if ocultarOpciones=="True": # Verificamos el valor del secreto "ocultarOpciones"
             if rol!='admin': # Si el rol no es admin
                 # Filtramos la tabla de páginas por el rol actual
                 dfPaginas = dfPaginas[dfPaginas['roles'].str.contains(rol)]                   

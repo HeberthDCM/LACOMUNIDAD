@@ -28,7 +28,7 @@ def get_db_connection():
 
 # Obtener comunicaciones pendientes
 def get_comunicaciones_pendientes():
-    conn = sqlite3.connect(st.secrets["baseDatos"], check_same_thread=False)
+    conn = sqlite3.connect("Datos.db", check_same_thread=False)
     #conn = get_db_connection()
     query = """
     SELECT c.Id, c.EmisorNombre, c.EmisorCelular, c.ReceptorNombre, c.ReceptorCelular, c.idMensaje, c.EnvioConfirmado, m.Mensaje FROM Comunicaciones c LEFT JOIN V_Mensajes m ON c.idMensaje = m.Id WHERE c.EnvioConfirmado = 0
