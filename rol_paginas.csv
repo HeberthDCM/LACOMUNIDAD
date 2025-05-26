@@ -1,12 +1,12 @@
 pagina,nombre,roles,icono
 inicio.py,Inicio,digitador|supervisor|lider_gp,home
-pages\0200_NuevosNacidos.py,Reporte Nuevos Nacidos,digitador|supervisor,diversity_2
-pages\0201_ImportarDatosNuevosNacidos.py,Importar Nuevos Nacidos,digitador|supervisor,contact_page
-pages\0202_RegistrarNuevosNacidos.py,Registrar Nuevos Nacidos,digitador|supervisor|supervisor,person_add
-pages\0203_AsignacionNuevosNacidos.py,Asignar Grupo responsable,supervisor,tenancy
-pages\0204_MensajeMasivoNuevosNacidos.py,Mensajes masivos,supervisor,mail
-pages\0300_Reportes.py,Reportes,lider_gp|supervisor,finance
-pages\0400_.py,Otros1,supervisor|supervisor,group
-pages\0500_.py,Otros2,supervisor|supervisor,sell
-pages\0100_Asistencia.py,Asistencia,supervisor|lider_gp,date_range
-pages\0000.py,Asistencia,supervisor|lider_gp,date_range
+pages/0200_NuevosNacidos.py,Reporte Nuevos Nacidos,digitador|supervisor,diversity_2
+pages/0201_ImportarDatosNuevosNacidos.py,Importar Nuevos Nacidos,digitador|supervisor,contact_page
+pages/0202_RegistrarNuevosNacidos.py,Registrar Nuevos Nacidos,digitador|supervisor|supervisor,person_add
+pages/0203_AsignacionNuevosNacidos.py,Asignar Grupo responsable,supervisor,tenancy
+pages/0204_MensajeMasivoNuevosNacidos.py,Mensajes masivos,supervisor,mail
+pages/0300_Reportes.py,Reportes,lider_gp|supervisor,finance
+pages/0400_.py,Otros1,supervisor|supervisor,group
+pages/0500_.py,Otros2,supervisor|supervisor,sell
+pages/0100_Asistencia.py,Asistencia,supervisor|lider_gp,date_range
+pages/0000.py,Asistencia,supervisor|lider_gp,date_range
