@@ -1,0 +1,7 @@
+usuario,nombre,clave,rol
+admin,"admin",admin,admin
+voluntario,"DIEGO ALBERTO",voluntario123,digitador
+supervisor,"Supervisor",sup123,supervisor
+lider_gp,"Lider",lider123,lider
+miembro,"Miembro",miebro123,miembro
+digitador,"DIGITADOR",digitador123,digitador
