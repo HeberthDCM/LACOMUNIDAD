@@ -82,8 +82,8 @@ def enviar_mensaje_whatsapp(numero, mensaje):
 st.title("📱 Sistema de Comunicaciones WhatsApp")
 
 
-
-archivo=__file__.split("\\")[-1]
+#archivo=__file__.split("\\")[-1]
+archivo=__file__.split("/")[-1]
 login.generarLogin(archivo)
 if 'usuario' in st.session_state:
     st.header('Página :orange[PRUEBAS]')

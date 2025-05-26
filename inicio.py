@@ -115,7 +115,7 @@ def MostrarNN_Edad2():
 
 
 
-
+#archivo=__file__.split("\\")[-1]
 archivo=__file__.split("/")[-1]
 login.generarLogin(archivo)
 #st.set_page_config(page_title="Pagina de Inicio", page_icon="🖇️", layout="wide")

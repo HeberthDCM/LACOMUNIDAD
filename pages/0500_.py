@@ -56,8 +56,8 @@ def enviar_mensaje_whatsapp(numero, mensaje, enviar_ahora):
 
 
 # Configuración de la página
-
-archivo=__file__.split("\\")[-1]
+#archivo=__file__.split("\\")[-1]
+archivo=__file__.split("/")[-1]
 login.generarLogin(archivo)
 if 'usuario' in st.session_state:
     st.header('Página :orange[Comunicacion masiva]')
