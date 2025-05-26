@@ -8,7 +8,7 @@ import plotly.express as px
 from forms.form_0200_NuevosNacidos import *
 from libraries.library_0200 import *
 
-cnx = sqlite3.connect(st.secrets["baseDatos"], check_same_thread=False)
+cnx = sqlite3.connect("Datos.db", check_same_thread=False)
 
 #tab01, tab02, tab03 = st.tabs(["Nuevos Nacidos", "Seguimiento Nuevos Nacidos", "Asistencia"])
 #st.set_page_config(page_title="Pagina de Inicio", page_icon="🖇️", layout="wide")

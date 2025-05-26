@@ -5,7 +5,7 @@ import pandas as pd
 from libraries.library_0200 import *
 
 def get_db_connection():
-    conn = sqlite3.connect(st.secrets["baseDatos"])  # Nombre de tu base de datos
+    conn = sqlite3.connect("Datos.db")  # Nombre de tu base de datos
     conn.row_factory = sqlite3.Row
     return conn
 

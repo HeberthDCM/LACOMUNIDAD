@@ -11,7 +11,7 @@ import time as tm
 def dataframeEditableNuevosNacidos():
 
     # Conexión a la base de datos
-    conn = sqlite3.connect(st.secrets["baseDatos"], check_same_thread=False)
+    conn = sqlite3.connect("Datos.db", check_same_thread=False)
     cursor = conn.cursor()
 
     st.title("Listado de Nuevos Nacidos sin Grupo Asignado")

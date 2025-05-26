@@ -5,7 +5,7 @@ from datetime import datetime, time
 from streamlit_cookies_controller import CookieController
 
 #cnx = sqlite3.connect("Datos.db", check_same_thread=False)
-cnx = sqlite3.connect(st.secrets["baseDatos"], check_same_thread=False)
+cnx = sqlite3.connect("Datos.db", check_same_thread=False)
 
 cursor = cnx.cursor()
 
