@@ -5,7 +5,7 @@ from streamlit_cookies_controller import CookieController # Librería para manej
 
 # Creamos una instancia de CookieController
 controller = CookieController()
-
+secrets = "rolpagina"
 
 def validarUsuario(usuario,clave):    
     """Permite la validación de usuario y clave
@@ -87,7 +87,7 @@ def validarPagina(pagina,usuario):
     dfPagina =dfPaginas[(dfPaginas['pagina'].str.contains(pagina))]
     # Validamos si el rol del usuario tiene acceso a la página
     if len(dfPagina)>0:
-        if rol in dfPagina['roles'].values[0] or rol == "admin" or st.secrets["tipoPermiso"]=="rol":
+        if rol in dfPagina['roles'].values[0] or rol == "admin" or secrets=="rol":
             return True # El usuario tiene permiso
         else:
             return False # El usuario no tiene permiso
@@ -165,7 +165,7 @@ def generarLogin(archivo):
     if 'usuario' in st.session_state: # Verificamos si la variable usuario esta en el session state
         
         # Si ya hay usuario cargamos el menu
-        if st.secrets["tipoPermiso"]=="rolpagina":
+        if secrets=="rolpagina":
             generarMenuRoles(st.session_state['usuario']) # Generamos el menú para la página
         else:
             generarMenu(st.session_state['usuario']) # Generamos el menú del usuario       
