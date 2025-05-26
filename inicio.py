@@ -116,7 +116,7 @@ def MostrarNN_Edad2():
 
 
 
-archivo=__file__.split("\\")[-1]
+archivo=__file__.split("//")[-1]
 login.generarLogin(archivo)
 #st.set_page_config(page_title="Pagina de Inicio", page_icon="🖇️", layout="wide")
 #tab01, tab02, tab03 = st.tabs(["Nuevos Nacidos", "Seguimiento Nuevos Nacidos", "Asistencia"])
